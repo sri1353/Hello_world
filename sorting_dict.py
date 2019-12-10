@@ -25,7 +25,8 @@ for index, item in enumerate(file_dict):
             new_key = str(key) + '_' + str(index)
             final_dict[new_key] = item[key]
 
-
+ 
+# printing the final_dict items
 for key, value in final_dict.items():
     print(str(key) + ':' + str(value))
 # print(final_dict)
