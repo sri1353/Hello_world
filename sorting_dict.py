@@ -1,9 +1,10 @@
 import json
 import os
 
+# changing the directory
 os.chdir("C:/Users/sri-krishna/Desktop")
 
-
+# reading from file
 with open('test.json', 'r')as fileobj:
     json_data = json.load(fileobj)
 
@@ -12,6 +13,7 @@ final_dict = {}
 # print(file_dict)
 # print(json.dumps(json_data, indent=4, sort_keys=True))
 
+# modifying the dictionary
 for index, item in enumerate(file_dict):
     for key, value in item.items():
         if key == "properties":
